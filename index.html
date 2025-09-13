@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Journey of a Star</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="story-container">
+    <!-- Scene 1 -->
+    <section class="scene active" id="scene1">
+      <h1>🌌 The Journey Begins</h1>
+      <p>A tiny star is born in the night sky... A sign of Hope..</p>
+      <div class="star"></div>
+      <button onclick="nextScene(2)">Next ➡️</button>
+    </section>
+
+    <!-- Scene 2 -->
+    <section class="scene" id="scene2">
+      <h1>🚀 The Star Travels</h1>
+      <p>The star sets off on a cosmic adventure...</p>
+      <div class="star moving"></div>
+      <button onclick="nextScene(3)">Next ➡️</button>
+    </section>
+
+    <!-- Scene 3 -->
+    <section class="scene" id="scene3">
+      <h1>🌍 The Star Arrives</h1>
+      <p>The star lands on Earth, lighting up the world with hope.</p>
+      <div class="star glowing"></div>
+      <button onclick="restartStory()">🔄 Restart</button>
+    </section>
+  </div>
+
+  <!-- Earth at the bottom -->
+  <div class="earth"></div>
+
+  <!-- Extra starfield background -->
+  <div class="starfield"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
